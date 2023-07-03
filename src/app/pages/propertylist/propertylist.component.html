@@ -1,0 +1,151 @@
+<app-banner></app-banner>
+<section class="sptb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-12 mb-5">
+                <!--Add lists-->
+                <div class="mb-lg-0">
+                    <div class="">
+                        <div class="item2-gl ">
+                            <div class=" mb-0">
+                                <div class="">
+                                    <div class="p-5 bg-white item2-gl-nav d-flex border rounded-2 mb-4">
+                                        <h6 class="mb-0 mt-2">Showing 1 to 12 of 57247 entries</h6>
+                                        <div class="d-flex ms-auto">
+                                            <label class="me-2 mt-1 mb-sm-1 pt-2">Sort By:</label>
+                                            <form method="GET" action="https://www.eauctionsindia.com/search" accept-charset="UTF-8" id="search1">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Sort by</option>
+                                                    <option value="1">Price: Highest first</option>
+                                                    <option value="2">Price: Lowest first</option>
+                                                    <option value="3">Recent</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-11">
+                                    <div class="card overflow-hidden"></div>
+                                    <div class="card overflow-hidden" *ngFor="let element of elements">
+                                        <div class="d-md-flex">
+                                            <div class="item-card9-img">
+                                                <div class="arrow-ribbon bg-primary">{{element.amount}}</div>
+                                            </div>
+                                            <div class="item-card9-icons">
+                                                <a href="https://www.eauctionsindia.com/login?redirect=https%3A%2F%2Fwww.eauctionsindia.com%2Fproperties%2F107074" class="item-card9-icons1" title="Added to favourite">
+                                                    <img src="https://www.eauctionsindia.com/assets/images/heart-white.png" width="30px" alt="Added to favourite">
+                                                </a>
+                                            </div>
+                                            <div class="card border-0 mb-0">
+                                                <div class="card-body ">
+                                                    <div class="item-card9" >
+                                                        <a href="https://www.eauctionsindia.com/properties/107074" class="text-dark me-4"><i class="fa fa-tag me-1"></i>{{element.tag}}</a>
+                                                        <a href="javascript:void(0);" class=""><span class="text-dark"><i class="fa fa-calendar-o  me-1"></i> {{element.datetime}}</span></a>
+                                                        <a href="https://www.eauctionsindia.com/properties/107074" class="text-dark">
+                                                            <h4 class="font-weight-bold mt-1">{{element.title}}</h4>
+                                                        </a>
+                                                        <div class="pt-2">
+                                                            <p>{{element.description}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="item-card9-footer d-flex">
+                                                        <div class="item-card9-cost">
+                                                            <a href="javascript:void(0);" class="me-4"><span class=""><i class="fa fa-list text-muted me-1"></i>Auction ID :# {{element.auctionid}}</span></a>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                            <a href="https://www.eauctionsindia.com/properties/107074" target="_blank" class="btn btn-primary btn-bg">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card overflow-hidden"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center-block text-center">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item disabled" aria-disabled="true" aria-label="pagination.previous">
+                                        <span class="page-link" aria-hidden="true">‹</span>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=2">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=3">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=4">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=5">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=6">6</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=7">7</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=8">8</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=9">9</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=10">10</a></li>
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=4770">4770</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.eauctionsindia.com/search?page=4771">4771</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="https://www.eauctionsindia.com/search?page=2" rel="next" aria-label="pagination.next">›</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!--/Add lists-->
+            </div>
+            <!--Right Side Content-->
+            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                <form method="GET" action="https://www.eauctionsindia.com/search" accept-charset="UTF-8" id="search2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input placeholder="Auction Id" class="form-control br-tl-3  br-bl-3" name="keyword" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header border-top">
+                            <h3 class="card-title">Price Range</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="custom_rangeslider">
+                                <label for="price">Price Range:</label>
+                                <div class="value_block" contenteditable="true">
+                                    <span class="txt txt_left">₹{{value}}</span>{{'-'}}
+                                    <span class="txt txt_right">₹{{highValue}}</span>
+                                </div>
+                                <ngx-slider
+                                [(value)]="value"
+                                (valueChange)="generateFirstValue(); generateHighValue()"
+                                [(highValue)]="highValue"
+                                [options]="options"
+                              ></ngx-slider>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary btn-block">Apply Filter</button>
+                        </div>
+                    </div>
+                    <div class="card mb-0">
+                        <div class="card-header">
+                            <h3 class="card-title">Shares</h3>
+                        </div>
+                        <div class="card-body product-filter-desc">
+                            <div class="product-filter-icons text-center">
+                                <a href="https://www.facebook.com/eauctionsindiaofficial/" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/eauctionsindia1" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/eauctionsindia/" class="linkedin-bg"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/eauctionsindiaofficial/" class="instagram-bg"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/Right Side Content-->
+        </div>
+    </div>
+</section>
